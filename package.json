@@ -1,0 +1,12 @@
+{
+  "name": "bish",
+  "version": "0.0.1",
+  "description": "Super-tiny asset concatenation and dependencies with imports",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jbt/bish.git"
+  },
+  "author": "James Taylor <jt@gosquared.com>",
+  "readmeFilename": "README.md"
+}
