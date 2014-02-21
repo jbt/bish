@@ -1,1 +1,1 @@
-module.exports = require('./lib/smsh');
+module.exports = require('./lib/bish');
