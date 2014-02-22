@@ -1,6 +1,6 @@
 {
   "name": "bish",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Super-tiny asset concatenation and dependencies with imports",
   "main": "index.js",
   "repository": {
