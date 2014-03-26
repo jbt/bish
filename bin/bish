@@ -1,0 +1,12 @@
+#!/usr/bin/env node
+
+var bish = require('../lib/bish');
+
+var file = process.argv[2];
+
+if(!file){
+  console.error('Usage: bish file');
+  process.exit(1);
+}
+
+process.stdout.write(bish(file));

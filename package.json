@@ -1,6 +1,6 @@
 {
   "name": "bish",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Super-tiny asset concatenation and dependencies with imports",
   "main": "index.js",
   "repository": {
@@ -12,5 +12,8 @@
   "devDependencies": {
     "ejs": "~0.8.5",
     "less": "~1.6.3"
+  },
+  "bin": {
+    "bish": "bin/bish"
   }
 }

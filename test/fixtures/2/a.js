@@ -1,3 +1,0 @@
-import "b.js";
-
-a;
