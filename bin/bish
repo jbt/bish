@@ -2,11 +2,16 @@
 
 var bish = require('../lib/bish');
 
-var file = process.argv[2];
+var file = process.argv[2], deps;
+
+if(file === '--deps' || file === '-d'){
+  deps = true;
+  file = process.argv[3];
+}
 
 if(!file){
-  console.error('Usage: bish file');
+  console.error('Usage: bish [--deps] file');
   process.exit(1);
 }
 
-process.stdout.write(bish(file));
+process.stdout.write(deps ? bish.deps(file).join(' ') : bish(file));
