@@ -8,6 +8,7 @@
     "url": "git://github.com/jbt/bish.git"
   },
   "author": "James Taylor <jt@gosquared.com>",
+  "license": "MIT",
   "readmeFilename": "README.md",
   "devDependencies": {
     "ejs": "~0.8.5",
