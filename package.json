@@ -11,9 +11,13 @@
   "readmeFilename": "README.md",
   "devDependencies": {
     "ejs": "~0.8.5",
-    "less": "~1.6.3"
+    "less": "~1.6.3",
+    "mocha": "^2.2.5"
   },
   "bin": {
     "bish": "bin/bish"
+  },
+  "scripts": {
+    "test": "mocha"
   }
 }

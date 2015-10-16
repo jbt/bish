@@ -1,5 +1,6 @@
 var path = require('path');
 var fs = require('fs');
+var assert = require('assert');
 
 var bish = require('../index');
 
@@ -24,19 +25,12 @@ tests.forEach(function(test){
   var opts = test.options || {};
   opts.root = opts.root || testDir;
 
-  var generated = bish(test.in, opts);
-  var expected = fs.readFileSync(path.resolve(testDir, test.out)).toString();
+  it(test.in, function(){
 
-  if(generated !== expected){
-    console.error('Test failed for import %s\n', test.in);
-    console.error('Expected: ');
-    console.error(JSON.stringify(expected));
-    console.error('\n\nGot: ');
-    console.error(JSON.stringify(generated));
-    process.exit(1);
-  }
+    var generated = bish(test.in, opts);
+    var expected = fs.readFileSync(path.resolve(testDir, test.out)).toString();
+
+    assert.strictEqual(generated, expected);
+
+  });
 });
-
-console.log('Success!');
-
-
